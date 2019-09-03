@@ -32,7 +32,6 @@ public class CcsController {
 
     @GetMapping("/clienteKafka")
     public List<ClienteKafka> listarClientes() {
-        List<ClienteKafka> contaClienteList = ccsService.listarClientes();
-        return contaClienteList;
+        return ccsService.listarClientes();
     }
 }
